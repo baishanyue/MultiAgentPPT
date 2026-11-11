@@ -143,7 +143,7 @@ class TextProcessor:
         try:
             width = shape.width
             height = shape.height
-        except:
+        except Exception:
             return SlideConfig.FONT_SIZES[font_type]["default"]
         
         char_count = len(text)
